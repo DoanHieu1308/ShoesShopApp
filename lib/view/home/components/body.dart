@@ -23,9 +23,10 @@ class _BodyState extends State<Body> {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         topCategoriesWidget(width, height),
-        SizedBox(height: 10),
+        SizedBox(height: 9),
         middleCategoriesWidget(width, height),
         SizedBox(height: 5),
         moreTextWidget(),

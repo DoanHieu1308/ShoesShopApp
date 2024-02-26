@@ -29,11 +29,11 @@ class _BodyProfileState extends State<BodyProfile> {
         children: [
           topProfilePicAndName(width, height),
           SizedBox(
-            height: 40,
+            height: 35,
           ),
           middleStatusListView(width, height),
           SizedBox(
-            height: 30,
+            height: 25,
           ),
           middleDashboard(width, height),
           bottomSection(width, height),

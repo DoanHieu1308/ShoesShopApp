@@ -10,8 +10,16 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-          backgroundColor: AppConstantsColor.backgroundColor,
-          body: const LogBody(),
+          body: Container(
+              height: MediaQuery.sizeOf(context).height,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/images/backgrough.jpg"),
+                  fit: BoxFit.cover
+                )
+              ),
+              child: LogBody()
+          ),
         )
     );
   }

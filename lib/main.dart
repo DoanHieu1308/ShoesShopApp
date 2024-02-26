@@ -1,8 +1,11 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled/view/login/login_screen.dart';
-import 'view/navigator.dart';
+import 'package:untitled/view/sign_up/sign_up_screen.dart';
 
-void main() {
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Quicksand',
       ),
       title: 'Sneakers Shop App',
-      home: LoginScreen()//MainNavigator() ,
+      home: ScreenSignUp()//MainNavigator() ,
     );
   }
 }
